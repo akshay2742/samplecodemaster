@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>hackCBS2.0</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://use.fontawesome.com/af7c85dc7a.js"></script> -->
+    <script src="https://kit.fontawesome.com/a9a97d4e6d.js"></script>
+    <script src="assets/js/countdown.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid col-md-12">
+        <div class="container-fluid col-md-12 row top-header">
+            <div class="col-md-4 bg-black top-left-container">
+                <div class="container col-md-2 logo-container">
+                    <img src="assets/images/logo.PNG" alt="logo" class="hackcbslogoPos">
+                </div>
+                <div class="container col-md-6 left-top-component">
+                    <div class="col-md-2">
+                        <h2><span class="code-bracket">&lt;</span>hackCBS2.0<span
+                                class="code-bracket">/&nbsp;&gt;</span></h2>
+                    </div>
+                    <p><i class="fas fa-landmark"></i>&nbsp;Shaheed Sukhdev &nbsp;College of Business Studies</p>
+                    <p><i class="far fa-calendar-alt"></i>&nbsp;19-20 October 2019</p>
+                </div>
+                <div class="container mobileTimerMargin">
+                    <button type="button" class="btn btn-warning">Workshop</button>
+                    <button type="button" class="btn btn-warning">hackathon</button>
+                </div>
+            </div>
+
+            <div class="col-md-8 bg-grey top-left hideMobile">
+
+                <div class="container dayNight">
+                    <div id="fullpage">
+                        <div class="section">
+
+                            <div class="time-circle">
+                                <div class="sun"></div>
+                                <div class="moon">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+
+                                </div>
+                                <div class="stars">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="water"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container hackathon-creative-container">
+                    <svg id="hackathon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="95.139px"
+                        viewBox="0 0 100 95.139" enable-background="new 0 0 100 95.139" xml:space="preserve">
+                        <polygon id="desk"
+                            points="31.944,68.75 31.944,77.083 37.5,77.083 62.5,77.083 68.057,77.083 68.057,68.75 " />
+                        <path id="laptop-left" class="laptop" d="M45.833,56.25c0-0.769-0.621-1.39-1.389-1.39c-0.613,0-1.117,0.402-1.301,0.954l-0.017-0.005l-2.461,7.384h-7.332
+                c-0.768,0-1.389,0.621-1.389,1.39c0,0.768,0.621,1.389,1.389,1.389h9.334l3.094-9.282l-0.017-0.006
+                C45.793,56.546,45.833,56.404,45.833,56.25z" />
+                        <g id="person-left" class="person">
+                            <path class="body"
+                                d="M36.111,54.861H24.146l-3.503-9.584l-0.019,0.008c-0.531-1.689-2.091-2.925-3.957-2.925c-0.67,0-1.295,0.175-1.856,0.455
+                l-0.007-0.014C5.257,47.574,0,58.27,0,72.917c0,2.301,1.865,4.166,4.167,4.166h12.5v13.889c0,2.302,1.865,4.167,4.167,4.167
+                S25,93.273,25,90.972V72.917c0-2.302-1.865-4.167-4.167-4.167H8.51c0.506-5.989,2.274-12.45,6.963-16.456l4.265,6.587l0.01-0.005
+                c0.457,0.91,1.388,1.541,2.475,1.541h13.889c1.534,0,2.777-1.244,2.777-2.778S37.645,54.861,36.111,54.861z" />
+                            <circle class="head" cx="27.778" cy="39.583" r="6.25" />
+                        </g>
+                        <path id="laptop-right" class="laptop" d="M66.667,63.194h-7.333l-2.461-7.384l-0.016,0.005c-0.186-0.552-0.688-0.954-1.303-0.954c-0.768,0-1.389,0.621-1.389,1.39
+                c0,0.153,0.04,0.296,0.088,0.434l-0.018,0.006l3.095,9.282h9.335c0.768,0,1.389-0.621,1.389-1.389
+                C68.055,63.815,67.436,63.194,66.667,63.194z" />
+                        <g id="person-left">
+                            <circle class="head" cx="72.223" cy="39.583" r="6.25" />
+                            <path class="body" d="M85.197,42.801l-0.008,0.014c-0.562-0.28-1.188-0.455-1.856-0.455c-1.864,0-3.426,1.234-3.956,2.925l-0.02-0.008
+                l-3.504,9.584H63.889c-1.533,0-2.777,1.243-2.777,2.777s1.244,2.778,2.777,2.778h13.889c1.088,0,2.02-0.631,2.477-1.541l0.01,0.005
+                l4.266-6.587c4.688,4.006,6.457,10.467,6.963,16.456H79.167c-2.302,0-4.167,1.864-4.167,4.167v18.055
+                c0,2.302,1.865,4.167,4.167,4.167s4.166-1.865,4.166-4.167V77.083h12.5c2.302,0,4.167-1.865,4.167-4.166
+                C100,58.27,94.743,47.574,85.197,42.801z" />
+                        </g>
+                        <!-- <g id="clock">
+                            <path
+                                d="M50,29.167c-8.042,0-14.583-6.542-14.583-14.583S41.958,0,50,0s14.583,6.542,14.583,14.583S58.042,29.167,50,29.167z
+                    M50,2.778c-6.509,0-11.806,5.296-11.806,11.806S43.491,26.389,50,26.389s11.807-5.296,11.807-11.806S56.509,2.778,50,2.778z" />
+                            <path id="hourhand"
+                                d="M51.389,14.554c0-0.578,0-3.323,0-3.323V6.25c0-0.769-0.621-1.39-1.39-1.39c-0.768,0-1.389,0.622-1.389,1.39v8.333
+                c0,0.768,0.621,1.389,1.389,1.389c0.385,0,0.731-0.157,0.983-0.409C51.215,15.368,51.389,15.132,51.389,14.554z" />
+                            <path id="minutehand" d="M50.935,15.572c0.395-0.394,2.267-2.266,2.267-2.266L56.6,9.908c0.523-0.523,0.52-1.376-0.01-1.905
+                c-0.53-0.529-1.383-0.534-1.906-0.01L49,13.678c-0.523,0.524-0.52,1.375,0.01,1.905c0.265,0.265,0.612,0.396,0.957,0.398
+                C50.259,16.008,50.54,15.968,50.935,15.572z" />
+                        </g> -->
+                    </svg>
+                </div>
+                <div class="container col-md-12 row timer-box-container">
+                    <div class="col-md"></div>
+                    <div class="col-md"><span id="days"></span>days</div>
+                    <div class="col-md"><span id="hours"></span>Hours</div>
+                    <div class="col-md"><span id="minutes"></span>Minutes</div>
+                    <div class="col-md"><span id="seconds"></span>Seconds</div>
+                </div>
+                <div class="container col-md-12 tagline-container">
+                    <h3 class="tagline-head">LEARN.TEACH.HACK.WIN</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-black row">
+
+        <div class="container col-md-12 mobileTimer">
+
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- About Us -->
+        <div class="container col-md-12">
+            <div class="sec-title-style1 text-center max-width ThemesTop">
+                <div class="title cl-white">About Us</div>
+                <div class="text">
+                    <div class="decor-left"><span></span></div>
+                    <p>hackCBS</p>
+                    <div class="decor-right"><span></span></div>
+                </div>
+
+            </div>
+           <div class="container col-md-12  aboutus">
+                <div class="container col-lg-8 col-md-12">
+                         <p>Initially, the word Hackathon comes from the word Marathon (a long or difficult activity in a
+                            short period) and ‘Hack’, here is meant as exploratory programming. Teams of programmers,
+                            developers, designers and project managers come together to design & build a nice product,
+                            a software project. The idea is to collaboratively code in an extreme manner, to start from
+                            scratch and end with a working prototype.
+                        </p>
+                    </div>
+                    <div class=" container col-lg-8 col-md-12">
+                        <p>hackCBS is the largest and most profound student hackathon across the Delhi University and a feather in the cap for the much famous Shaheed Sukhdev College of Business Studies, Delhi. Organised by the KRONOS- the technical society of SSCBS, the hackathon boasts of having an overwhelming 1800+ registerations from 12 states and prizes worth $30,000 distributed last year. The 32-hour event comprises of workshops, key-note sessions, periodic evaluation of participants and much needed swag distribution! The night stay and refreshments are provided during the 24-hour hacking period. Want to experience something exciting and full of knowledge? Come take part in this largest hackathon in the Delhi University.</p>
+                    </div>
+           </div>
+        </div>
+        <div class="container col-md-12 bg-black">
+            <div class="container">
+                <br>
+                <div class="sec-title-style1 text-center max-width ThemesTop">
+                    <div class="title cl-white">Speakers</div>
+                    <div class="text">
+                        <div class="decor-left"><span></span></div>
+                        <p>hackCBS</p>
+                        <div class="decor-right"><span></span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <figure class="snip1578">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" />
+                    <figcaption>
+                        <h3>Bailey Wonger</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="snip1578 hover"><img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg"
+                        alt="profile-sample5" />
+                    <figcaption>
+                        <h3>Abraham Pigeon</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="snip1578"><img
+                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg"
+                        alt="profile-sample4" />
+                    <figcaption>
+                        <h3>Hans Down</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="snip1578">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" />
+                    <figcaption>
+                        <h3>Bailey Wonger</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="snip1578">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" />
+                    <figcaption>
+                        <h3>Bailey Wonger</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="snip1578">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg"
+                        alt="profile-sample6" />
+                    <figcaption>
+                        <h3>Bailey Wonger</h3>
+                        <small>hey</small>
+                        <div class="icons"><a href="#"><i class="ion-social-twitter"></i></a>
+                            <a href="#"> <i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"> <i class="ion-social-github"></i></a>
+                        </div>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+        <br>
+
+        <!-- Themes -->
+        <div class="container col-md-12 ThemesTop">
+            <div class="container">
+                <div class="container">
+                    <div class="sec-title-style1 text-center max-width">
+                        <div class="title">Themes</div>
+                        <div class="text">
+                            <div class="decor-left"><span></span></div>
+                            <p>Find Solution</p>
+                            <div class="decor-right"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="flip">
+                <div class="front"
+                    style="background-image: url(https://images.unsplash.com/photo-1456428746267-a1756408f782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)">
+                    <h1 class="text-shadow">BLOCKCHAIN</hi>
+                </div>
+                <div class="back">
+                    <h2>BLOCKCHAIN</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front"
+                    style="background-image: url(https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80)">
+                    <h1 class="text-shadow">LAKE</hi>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front"
+                    style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                    <h1 class="text-shadow">OCEAN</hi>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="flip flip-vertical">
+                <div class="front"
+                    style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                    <h1 class="text-shadow">FOREST</hi>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+            <div class="flip flip-vertical">
+                <div class="front"
+                    style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                    <h1 class="text-shadow h1Themes">TRACK</hi>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+            <div class="flip flip-vertical">
+                <div class="front"
+                    style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+                    <h1 class="text-shadow">SWAMP</hi>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by hand..</p>
+                </div>
+            </div>
+        </div>
+        <!-- Themes End -->
+
+
+        <!-- Timeline -->
+        <br>
+        <div class="container-fluid col-md-12">
+
+            <div class="container">
+                <div class="container">
+                    <div class="sec-title-style1 text-center max-width">
+                        <div class="title">Timeline</div>
+                        <div class="text">
+                            <div class="decor-left"><span></span></div>
+                            <p>hackCBS</p>
+                            <div class="decor-right"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <section class="timeline">
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint timeline__midpoint--highlight no-top-margin">
+                        <h3 class="timeline__year">DAY1</h3>
+                    </div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year timeline__year--mobile">DAY1</h3>
+                        <!-- <p class="timeline__text--right">
+                            Naughty kid get to school early in order to play catching around school compound.
+                        </p> -->
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">1989</h3>
+                        <p class="timeline__text--left">
+                            The birth of a wonderful, fabulous, adorable and lovable baby.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">1991</h3>
+                        <p class="timeline__text--right">
+                            Earliest memory of running to the door to welcome Daddy home.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">1993</h3>
+                        <p class="timeline__text--left">
+                            Celebrated my birthday with my playmates in school. What a wonderful surprise to have
+                            the
+                            same birthday as my teacher!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">2003</h3>
+                        <p class="timeline__text--left">
+                            Our cross country team won the fifth place - just one point away from the fourth and
+                            getting
+                            that tiny momento trophy and life-long glory. &#9785;
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">2008</h3>
+                        <p class="timeline__text--right">
+                            Bumpkin intern arrived in Disneyland.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint timeline__midpoint--highlight no-top-margin">
+                        <h3 class="timeline__year">2009</h3>
+                    </div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year timeline__year--mobile">2009</h3>
+                        <img class="timeline__img" src="" alt="">
+                        <!-- <p class="timeline__text--left">
+                            Thinking about the future.
+                        </p> -->
+                    </div>
+                </div>
+
+
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">2012</h3>
+                        <p class="timeline__text--left">
+                            Proudly present - the graduand.hello from any country of the world
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">2015</h3>
+                        <img class="timeline__img" src="" alt="">
+                        <p class="timeline__text--left">
+                            Grateful to the everyone and the universe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">2012</h3>
+                        <p class="timeline__text--left">
+                            Proudly present - the graduand.hello from any country of the world
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--left">
+                        <h3 class="timeline__year">2015</h3>
+                        <img class="timeline__img" src="" alt="">
+                        <p class="timeline__text--left">
+                            Grateful to the everyone and the universe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__block">
+                    <div class="timeline__midpoint"></div>
+                    <div class="timeline__content timeline__content--right">
+                        <h3 class="timeline__year">Going forward</h3>
+                        <p class="timeline__text--right">
+                            Many more Creative thing are on the way
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        <!-- Timeline End -->
+
+
+        <!-- Previous Year Stats -->
+        <div class="container StatsContainerHeight">
+            <div class="container col-md-12">
+                <div class="sec-title-style1 text-center max-width">
+                    <div class="title">Previous Year Stats</div>
+                    <div class="text">
+                        <div class="decor-left"><span></span></div>
+                        <p>Yaadein</p>
+                        <div class="decor-right"><span></span></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container glimpseContainer">
+                <!-- 	<h1 class="bg-white">Glimpse</h1> -->
+                <div class="row h-100">
+                    <div class="col-md-3 my-auto">
+                        <div class="card element-container">
+                            <div class="card-body d-flex">
+                                <div class="card stat" id="stat1">1.8k+</div>
+                                <div class="stat-name">
+                                    <hr class="color1" />
+                                    <h5 class="card-title">Registations</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-auto">
+                        <div class="card element-container">
+                            <div class="card-body d-flex">
+                                <div class="card stat" id="stat1">105</div>
+                                <div class="stat-name">
+                                    <hr class="color1" />
+                                    <h5 class="card-title">Colleges</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-auto">
+                        <div class="card element-container">
+                            <div class="card-body d-flex">
+                                <div class="card stat" id="stat2">12</div>
+                                <div class="stat-name">
+                                    <hr class="color2" />
+                                    <h5 class="card-title">States</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-auto">
+                        <div class="card element-container">
+                            <div class="card-body d-flex">
+                                <div class="card stat" id="stat3">100+</div>
+                                <div class="stat-name">
+                                    <hr class="color3" />
+                                    <h5 class="card-title">Total Teams</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- Previous Year Stats End -->
+
+        <!-- Sponsors -->
+        <div class="container col-md-12">
+
+            <div class="container">
+                <div class="sec-title-style1 text-center max-width">
+                    <div class="title">Sponsors</div>
+                    <div class="text">
+                        <div class="decor-left"><span></span></div>
+                        <p>Bhagwan</p>
+                        <div class="decor-right"><span></span></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container col-md-12">
+                <img src="assets/images/Zopper.png" height="300px" width="400px" alt="zoopers">
+            </div>
+        </div><br>
+
+        <div class="container row">
+            <div class="col-md">
+                <!-- <img src="assets/images/hackerone.png" height="200px"  alt="hackerone"> -->
+            </div>
+            <div class="col-md">
+                <img src="assets/images/hackerone.png" height="200px" alt="hackerone">
+            </div>
+            <div class="col-md">
+                <img src="assets/images/Github.png" height="200px" alt="github">
+            </div>
+            <div class="col-md">
+                <img src="assets/images/Gatsby.png" height="200px" alt="gatsby">
+            </div>
+        </div>
+        <!-- Sponsors End -->
+
+        <!-- venue and contact -->
+        <div class="container col-md-12">
+            <section class="contact-address-area">
+                <div class="container">
+                    <div class="sec-title-style1 text-center max-width clr-black">
+                        <div class="title">Contact Us</div>
+                        <div class="text">
+                            <div class="decor-left"><span></span></div>
+                            <p>Raasta</p>
+                            <div class="decor-right"><span></span></div>
+                        </div>
+
+                    </div>
+                    <div class="contact-address-box row">
+                        <!--Start Single Contact Address Box-->
+                        <div class="col-sm-4 single-contact-address-box text-center">
+                            <div class="icon-holder">
+                                <span class="icon-clock-1">
+                                    <span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span><span class="path4"></span><span class="path5"></span><span
+                                        class="path6"></span><span class="path7"></span><span class="path8"></span><span
+                                        class="path9"></span><span class="path10"></span><span
+                                        class="path11"></span><span class="path12"></span><span
+                                        class="path13"></span><span class="path14"></span><span
+                                        class="path15"></span><span class="path16"></span><span
+                                        class="path17"></span><span class="path18"></span><span
+                                        class="path19"></span><span class="path20"></span>
+                                </span>
+                            </div>
+                            <h3>Akshay Sharma</h3>
+                            <h2 class="color-black">+91 9639064985 </h2>
+                        </div>
+                        <!--End Single Contact Address Box-->
+                        <!--Start Single Contact Address Box-->
+                        <div class="col-sm-4 single-contact-address-box main-branch">
+                            <h3 class="h3venue">Venue</h3>
+                            <div class="inner">
+                                <ul class="venue">
+                                    <li>
+                                        <div class="title">
+                                            <h4 class="h4venue">Address:</h4>
+                                        </div>
+                                        <div class="text">
+                                            <p>Shaheed Sukhdev College of Business Studies,<br> KN-Katju Marg Sec-16
+                                                Rohini,New Delhi</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <h4>Email:</h4>
+                                        </div>
+                                        <div class="text">
+                                            <p>hackCBS@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <h4>GoogleMap:</h4>
+                                        </div>
+                                        <div class="text">
+                                            <p>Mon-Fri: 9:30am - 6:30pm<br> Sat-Sun: Closed</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End Single Contact Address Box-->
+                        <!--Start Single Contact Address Box-->
+                        <div class="col-sm-4 single-contact-address-box text-center">
+                            <div class="icon-holder">
+                                <span class="icon-question-2">
+                                    <span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span><span class="path4"></span>
+                                </span>
+                            </div>
+                            <h3 class="h3venue">Surbhi Gupta</h3>
+                            <h2 class="color-black">+91 7404526040 </h2>
+                            <!--End Single Contact Address Box-->
+                        </div>
+                    </div>
+            </section>
+            <!--End Contact Address Area-->
+
+
+        </div>
+        <div class="col-md-12 row ">
+            <div class="container col-md-6"></div>
+            <div class="container col-md-6"></div>
+        </div>
+        <!-- FOOTER START -->
+        <div class="footer">
+            <div class="container-fluid row">
+                <div class="col-md-4 footer-logo">
+                    <img src="assets/images/KronosLogo.png">
+                </div>
+
+                <!-- <div class="col-md-2">
+                    <h1>Accounts</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Mission</li>
+                        <li>Services</li>
+                        <li>Social</li>
+                        <li>Get in touch</li>
+                    </ul>
+                </div> -->
+                <div class="col-md-4">
+                    <!-- <h1>Resources</h1> -->
+                    <ul>
+                        <h1>Resources</h1>
+                        <li><a href="#">Code of Conduct</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+
+                    </ul>
+                </div>
+                <!-- <div class="col-md-2">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Web chat</li>
+                        <li>Open ticket</li>
+                    </ul>
+                </div> -->
+                <div class="col-md-4 social">
+
+                    <ul>
+                        <h1>Social</h1>
+                        <li><a href="https://www.instagram.com/hackcbs/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/hackcbs/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/hackcbs"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://in.linkedin.com/company/hackcbs"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- END OF FOOTER -->
+    </div>
+    <script src="assets/js/countdown.js"></script>
+</body>
+
+</html>
